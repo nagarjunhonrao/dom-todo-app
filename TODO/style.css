@@ -1,29 +1,73 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-html, body{
-    width: 100%;
-    height: 100%;
-}
-#heading{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 1.2rem;
+html, body {
+  width: 100%;
+  height: 100%;
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
 }
 
-#todoForm{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+/* Page center layout */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-#todoList{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+/* Main container (wrap everything in a div) */
+.container {
+  background: #fff;
+  padding: 1.5rem;
+  width: 100%;
+  max-width: 400px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* Heading */
+#heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1.2rem;
+}
+
+/* Form */
+#todoForm {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+#todoForm input {
+  flex: 1;
+  padding: 0.5rem;
+  font-size: 1rem;
+}
+
+#todoForm button {
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+
+/* Todo list */
+#todoList {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+/* Each todo item */
+#todoList li {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #eee;
+  padding: 0.5rem;
+  border-radius: 4px;
 }
